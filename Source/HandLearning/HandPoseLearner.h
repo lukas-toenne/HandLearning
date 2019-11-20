@@ -68,6 +68,9 @@ class HANDLEARNING_API UHandLearningFunctionLibrary : public UBlueprintFunctionL
 public:
 
 	UFUNCTION(BlueprintCallable)
+	static void GetHandDataFromDevice(FHandLearningData &LeftHandData, FHandLearningData &RightHandData, bool &bLeftHandIsTracking, bool &bRightHandIsTracking);
+
+	UFUNCTION(BlueprintCallable)
 	static bool LoadHandData(const FString &filename, FHandLearningData& data);
 	UFUNCTION(BlueprintCallable)
 	static bool SaveHandData(const FString& filename, const FHandLearningData& data);

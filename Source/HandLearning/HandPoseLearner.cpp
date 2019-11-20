@@ -7,6 +7,13 @@
 #include "Serialization/JsonWriter.h"
 #include "Misc/FileHelper.h"
 
+void UHandLearningFunctionLibrary::GetHandDataFromDevice(FHandLearningData &LeftHandData, FHandLearningData &RightHandData, bool &bLeftHandIsTracking, bool &bRightHandIsTracking)
+{
+
+
+	bLeftHandIsTracking = false;
+	bRightHandIsTracking = false;
+}
 
 bool UHandLearningFunctionLibrary::LoadHandData(const FString& filename, FHandLearningData& data)
 {
